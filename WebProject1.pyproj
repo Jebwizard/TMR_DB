@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{aac3caac-3e49-4bfb-a31b-d6e1638efc68}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>WebProject1\index.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="Readme.txt" />
+    <Content Include="WebProject1\index.html" />
+    <Content Include="WebProject1\obj\Debug\WebProject1.pyproj.FileListAbsolute.txt" />
+    <Content Include="WebProject1\templates\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebProject1\bin\wfastcgi.py" />
+    <Compile Include="WebProject1\index.py" />
+    <Compile Include="WebProject1\obj\Debug\attach_server.py" />
+    <Compile Include="WebProject1\obj\Debug\visualstudio_py_debugger.py" />
+    <Compile Include="WebProject1\obj\Debug\visualstudio_py_repl.py" />
+    <Compile Include="WebProject1\obj\Debug\visualstudio_py_util.py" />
+    <Compile Include="WebProject1\obj\Debug\__init__.py" />
+    <Compile Include="WebProject1\obj\Debug\__main__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebProject1" />
+    <Folder Include="WebProject1\bin" />
+    <Folder Include="WebProject1\obj\" />
+    <Folder Include="WebProject1\obj\Debug" />
+    <Folder Include="WebProject1\templates" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\3.5" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
